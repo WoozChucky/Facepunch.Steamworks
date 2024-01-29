@@ -11,6 +11,19 @@
 		<RootNamespace>Steamworks</RootNamespace>
 	</PropertyGroup>
 
+	<ItemGroup>
+		<None Include="libsteam_api.so">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackagePath>content</PackagePath>
+		</None>
+		<None Include="libsteam_api.dylib">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+			<Pack>true</Pack>
+			<PackagePath>content</PackagePath>
+		</None>
+	</ItemGroup>
+
 	<Import Project="Facepunch.Steamworks.targets" />
 
 </Project>
